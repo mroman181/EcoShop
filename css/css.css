@@ -4,7 +4,7 @@ body{padding:50px 0px 0px 0px; z-index:0; background-color: #F0F2DD;}
 
 .navbar-dark .navbar-nav .nav-link { color: rgb(255, 255, 255);}
  
-.nav-item:hover, .navbar-brand:hover, .navbar-toggler:hover{background-color:  #42250b;}
+.hov:hover{background-color:  #42250b;}
 .active{ background-color:  #2c1907;}
 
 .row-header{    margin:0px auto;    padding:0px;}
@@ -41,7 +41,9 @@ address{
     width: 150px;
 }
 .navbar-brand{padding:8px 8px;}
-
+.img-footer{padding: .25rem; max-width: 100%; height: auto;}
+.img-comer{max-height: 338px;}
+.img-responsive{width: 100%;}
 @media screen and (max-width: 767px){ 
     .divfooter{margin-top: 10px;}
     
