@@ -32,6 +32,8 @@ address{    font-size:80%;    margin:0px;}
 .img-nomargin{margin:0px;}
 .img-tipo{max-height: 90px; max-width: 30%;}
 .img-tipo2{position: relative; left: 19%;}
+.img-icon{max-width: 13%;}
+.thumbnail{padding:8px; margin-bottom:15px; background-color: #9ED54C;border: 2px solid black;}
 
 @media screen and (max-width: 767px){ 
 
