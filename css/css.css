@@ -38,8 +38,9 @@ address{    font-size:80%;    margin:0px;}
 .jumbotron{padding: 30px 30px;}
 #img-header{max-height: 180px; margin-left: auto; margin-right: auto; display: block;}
 #map{max-width: 100%; border: 2px solid black;}
-.producto{margin-top:0px;
-}
+.producto{margin-top:0px;}
+.receta{margin-top: 20px;}
+
 @media screen and (max-width: 767px){ 
 
     .divfooter{margin-top: 10px;}
@@ -59,6 +60,7 @@ address{    font-size:80%;    margin:0px;}
      .img-tipo2{position: relative; left: 25%;}
      .carousel-item{padding:0px;}  
     #divmap{margin-top:20px;}   
+    .descripcion{margin-top:10px;}
 }
 
 @media (min-width: 768px){
