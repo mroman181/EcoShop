@@ -20,6 +20,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/js.js"></script>
 </head>
 
 <body>
@@ -98,18 +99,36 @@
     </nav>
 
     <!-- Header -->
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Sóller Bio</h1>
-                    <p>Productos ecólogicos para todos</p>
+    <header>
+        <div style="width:100%;">
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators d-none d-md-flex">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="carousel1" src="img/carousel1.png" alt="Sóller Bio" style="width:100%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="carousel2" src="img/carousel2.png" alt="Productos ecológicos" style="width:100%;">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="carousel3" src="img/carousel3.png" alt="Chica saludable" style="width:100%;">
+                    </div>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" class="img-fluid">
-                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
             </div>
         </div>
+
+
     </header>
 
     <!-- Contenedor -->
@@ -132,7 +151,9 @@
             </div>
             <div class="d-none d-md-block col-2 slide">
                 <div class="media slide">
-                    <img class="d-flex mr-3 img-thumbnail align-self-center img-banner2 img-nomargin" src="img/atencion.jpg" alt="Contacto">
+                    <a href="contactus.html">
+                        <img class="d-flex mr-3 img-thumbnail align-self-center img-banner2 img-nomargin" src="img/atencion.jpg" alt="Contacto">
+                    </a>
 
                 </div>
                 <div class="media slide">
@@ -175,9 +196,9 @@
                     <h2 class="text-left">
                         <b>¡Dia 3 de enero abrimos nuestra tienda!</b>
                     </h2>
-                    <h6 class="text-justify">¡Al fin podemos anunciarlo, día 3 de enero abiremos Soller Bio! En nuestra tienda tendremos 
-                        todo tipo de producto que busqueis: sin gluten, veganos, sin lactos, productos sin química, comercio justo... Todo ello
-                        para que podais disfrutar de lo que os apetezca de su calidad y con vuestra salud. 
+                    <h6 class="text-justify">¡Al fin podemos anunciarlo, día 3 de enero abiremos Soller Bio! En nuestra tienda tendremos todo tipo
+                        de producto que busqueis: sin gluten, veganos, sin lactos, productos sin química, comercio justo...
+                        Todo ello para que podais disfrutar de lo que os apetezca de su calidad y con vuestra salud.
                     </h6>
                     <p class="text-right">
                         <em>12/03/2018 | 11:30</em>
@@ -208,6 +229,7 @@
 
 
 
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -225,7 +247,7 @@
                 <div class="divfooter col-6 col-md-3">
                     <h5>Atención al cliente</h5>
                     <address>
-                        12, Carrer de Bauçà
+                        11, Carrer de Bauçà
                         <br> Soller, Islas Baleares
                         <br> España
                         <br>
@@ -234,7 +256,7 @@
                         <i class="fa fa-fax fa-lg"></i>: +852 8765 4321
                         <br>
                         <i class="fa fa-envelope fa-lg"></i>:
-                        <a href="mailto:ecoshop@gmail.com">ecoshop@gmail.com</a>
+                        <a href="mailto:sollerbio@gmail.com">sollerbio@gmail.com</a>
                     </address>
                 </div>
 
@@ -247,7 +269,6 @@
                         <a class="btn btn-social-icon btn-instagram" href="http://insagram.com/">
                             <i class="fa fa-instagram"></i>
                         </a>
-
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/">
                             <i class="fa fa-twitter"></i>
                         </a>
@@ -257,7 +278,7 @@
             <br>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <p>© Copyright 2018 Sóller Bio</p>
+                    <p>© Copyright 2018 Soller Bio</p>
                 </div>
             </div>
         </div>

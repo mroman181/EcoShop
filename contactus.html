@@ -97,90 +97,95 @@
         </div>
     </nav>
 
+    <!-- Header -->
     <header class="jumbotron">
         <div class="container">
-            <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Siam Palace Thai Cuisine</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
-                        lipsmacking creations will tickle your culinary senses!</p>
+            <div class="row row-content align-items-center row-no-padding">
+                <ol class="col-12 breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">Contáctanos</li>
+                </ol>
+
+                <div class="col-12 col-md-6 ">
+                    <h1>Contáctanos</h1>
+                    <h4 class="text-left">Aténdemos a cualquier duda, petición o sugerencia</h4>
                 </div>
-                <div class="col-12">
+                <div class="col-12 col-md-6">
+                    <img src="img/logo-nav.png" class="img-fluid" id="img-header">
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Contenedor -->
     <div class="container">
-        <div class="row row-content align-items-center">
-            <ol class="col-12 breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active">Contact Us</li>
-            </ol>
-
-            <div class="col-12">
-                <h3>Contact Us</h3>
-                <hr>
-                <div>
-                </div>
-            </div>
-        </div>
 
         <div class="row row-content align-items-center">
             <div class="col-12">
-                <h3>Location Information</h3>
+                <h3>Localización</h3>
             </div>
             <div class="col-12 col-md-5 offset-md-1">
-                <h5>Our Address</h5>
-                <address style="font-size: 100%">
-                    121, Clear Water Bay Road<br>
-                    Clear Water Bay, CA<br>
-                    USA<br>
-                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                <h5 class="direccion">Nuestra dirección</h5>
+                <br>
+                <address class="direccion" style="font-size: 100%">
+                    Carrer Bauzà, 11
+                    <br> Sóller, Islas Baleares
+                    <br> España
+                    <br>
+                    <i class="fa fa-phone fa-lg"></i>: +852 1234 5678
+                    <br>
+                    <i class="fa fa-fax fa-lg"></i>: +852 8765 4321
+                    <br>
                     <i class="fa fa-envelope fa-lg"></i>:
-                    <a href="mailto:siampalace@food.net">confusion@food.net</a>
+                    <a href="mailto:siampalace@food.net">sollerbio@gmail.com</a>
                 </address>
+                <br>
+                <!-- IMPORTANT -->
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+85212345678">
+                        <i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-success" href="mailto:sollerbio@gmail.com">
+                        <i class="fa fa-envelope-o"></i>
+                        Email</a>
+                </div>
             </div>
-            <div class="col-12 col-md-5">
-                <h5>Map of our Location</h5>
+            <div id="divmap" class="col-12 col-md-6">
+                <h5>Mapa de nuestra ubicación</h5>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d766.7034247497468!2d2.7137012291843456!3d39.76629109871537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297e8bf3c7e8637%3A0x2f27054db0fc1568!2zQ2FycmVyIGRlIEJhdcOnw6AsIDExLCAwNzEwMCBTw7NsbGVyLCBJbGxlcyBCYWxlYXJz!5e0!3m2!1ses!2ses!4v1544002456345"
+                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <!-- IMPORTANT -->
-            <div class="btn-group col-12 col-sm-5 offset-sm-1" role="group">
-                <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
-                <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
-                <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i>
-                    Email</a>
-            </div>
+
 
         </div>
 
         <div class="row row-content align-items-center">
             <div class="col-12">
-                <h3>Send us your Feedback</h3>
+                <h3>Envianos tu mensaje</h3>
                 <br>
             </div>
             <!-- IMPORTANT -->
             <form class="col-12">
                 <div class="form-group row">
-                    <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                    <label for="firstname" class="col-md-2 col-form-label">Nombre</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                        <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Nombre">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                    <label for="lastname" class="col-md-2 col-form-label">Apellidos</label>
                     <div class="col-md-10">
-                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                        <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellidos">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label>
+                    <label for="telnum" class="col-12 col-md-2 col-form-label">Teléfono</label>
                     <div class="col-5 col-md-3">
-                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+                        <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="+031">
                     </div>
                     <div class="col-7 col-md-7">
-                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. number">
+                        <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Teléfono">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -194,7 +199,7 @@
                         <div class="form-check">
                             <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
                             <label class="form-check-label" for="approve">
-                                <strong>May we contact you?</strong>
+                                <strong>¿Deberíamos contactar contigo?</strong>
                             </label>
                         </div>
                     </div>
@@ -206,14 +211,14 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <label for="feedback" class="col-md-2 col-form-label">Tu mensaje</label>
                     <div class="col-md-10">
                         <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="offset-md-2 col-md-10">
-                        <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                     </div>
                 </div>
 
@@ -224,51 +229,52 @@
 
     </div>
 
+    
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="divfooter col-12 col-md-4">
-                    <h5>Certificaciones ecológicas</h5>
-                    <img class="d-flex mr-3 img-footer align-self-center" src="img/certificaciones.png" alt="Certificaciones ecológicas">
+            <div class="container">
+                <div class="row">
+                    <div class="divfooter col-12 col-md-4">
+                        <h5>Certificaciones ecológicas</h5>
+                        <img class="d-flex mr-3 img-footer align-self-center" src="img/certificaciones.png" alt="Certificaciones ecológicas">                    
+                    </div>
+                    <div class="divfooter col-12 col-md-3">
+                        <h5>Sello de confianza</h5>
+                        <img id="sello" class="d-flex mr-3 img-footer align-self-center" src="img/sello.png" alt="Sello de confianza"> 
+                        
+                    </div>
+    
+                    <div class="divfooter col-6 col-md-3">
+                        <h5>Atención al cliente</h5>
+                        <address>
+                            11, Carrer de Bauçà<br>
+                            Soller, Islas Baleares<br>
+                            España<br>
+                            <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                            <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
+                            <i class="fa fa-envelope fa-lg"></i>:
+                            <a href="mailto:sollerbio@gmail.com">sollerbio@gmail.com</a>
+                        </address>
+                    </div>
+    
+                    <div class="divfooter col-6 col-md-2">
+                        <h5>Redes sociales</h5>
+                        <div >
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
+                                    class="fa fa-facebook"></i></a>
+                                    <a class="btn btn-social-icon btn-instagram" href="http://insagram.com/"><i class="fa fa-instagram"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="divfooter col-12 col-md-3">
-                    <h5>Sello de confianza</h5>
-                    <img id="sello" class="d-flex mr-3 img-footer align-self-center" src="img/sello.png" alt="Sello de confianza">
-
-                </div>
-
-                <div class="divfooter col-6 col-md-3">
-                    <h5>Atención al cliente</h5>
-                    <address>
-                        12, Carrer de Bauçà<br>
-                        Soller, Islas Baleares<br>
-                        España<br>
-                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
-                        <i class="fa fa-fax fa-lg"></i>: +852 8765 4321<br>
-                        <i class="fa fa-envelope fa-lg"></i>:
-                        <a href="mailto:ecoshop@gmail.com">ecoshop@gmail.com</a>
-                    </address>
-                </div>
-
-                <div class="divfooter col-6 col-md-2">
-                    <h5>Redes sociales</h5>
-                    <div>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i
-                                class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-instagram" href="http://insagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p>© Copyright 2018 Soller Bio</p>
                     </div>
                 </div>
             </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <p>© Copyright 2018 EcoShop</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 </html>

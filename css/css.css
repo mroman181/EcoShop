@@ -34,7 +34,12 @@ address{    font-size:80%;    margin:0px;}
 .img-tipo2{position: relative; left: 19%;}
 .img-icon{max-width: 13%;}
 .thumbnail{padding:8px; margin-bottom:15px; background-color: #9ED54C;border: 2px solid black;}
-
+.row-no-padding{padding:0px;}
+.jumbotron{padding: 30px 30px;}
+#img-header{max-height: 180px; margin-left: auto; margin-right: auto; display: block;}
+#map{max-width: 100%; border: 2px solid black;}
+.producto{margin-top:0px;
+}
 @media screen and (max-width: 767px){ 
 
     .divfooter{margin-top: 10px;}
@@ -52,13 +57,15 @@ address{    font-size:80%;    margin:0px;}
      .icon-bar+.icon-bar { margin-top: 4px;}
      .img-tipo{ position: relative; left: 13%; max-height: 90px; max-width: 22%;}
      .img-tipo2{position: relative; left: 25%;}
-     
+     .carousel-item{padding:0px;}  
+    #divmap{margin-top:20px;}   
 }
 
 @media (min-width: 768px){
     .navbar-expand-md>.container, .navbar-expand-md>.container-fluid{margin-left: 50px; margin-right: 50px;}
     .nav-item{height: 49px;}
     .nav-link{ margin-top: 3px;}
+    .direccion{ position: relative; bottom: 34px;}
 }
 
 @media screen and (max-width: 1200px){
