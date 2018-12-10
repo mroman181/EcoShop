@@ -20,22 +20,9 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-    <script>
+    <script src="node_modules/nodemailer/lib/nodemailer.js"></script>
+    <script src="js/js.js"></script>
 
-        $(document).ready(function (e) {
-
-            $("#btn-formulary").click(function() {
-                swal({type:"success",
-                    title:"Enviado satisfactoriamente",
-                    text:"Le atenderemos lo antes posible"}
-                    ).then((value) => {
-                       if(value) window.open("index.html","_self");
-                    });
-                
-            });
-        })
-
-    </script>
 </head>
 
 <body>
@@ -65,11 +52,11 @@
                             Cosmética</a>
                     </li>
                     <li class="nav-item d-xs-block d-md-none d-lg-block">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="dietetic.html">
                             <span class="fas fa-heart"></span>
                             Dietética</a>
                     </li>
-                    <li class="nav-item dropdown d-none d-md-block d-lg-none">
+                    <li class="nav-item dropdown d-none d-md-block d-lg-none hov">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
                             <span class="fas fa-leaf"></span> Productos
                         </a>
@@ -83,7 +70,7 @@
                                     <span class="far fa-eye"></span>Cosmética</a>
                             </li>
                             <li class="hov">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="dietetic.html">
                                     <span class="fas fa-heart"></span>Dietética</a>
                             </li>
 
@@ -129,7 +116,7 @@
 
                 <div class="col-12 col-md-6 ">
                     <h1>Recetas ecológicas</h1>
-                    <h4 class="text-left">Envíanos tu receta ecológica para disfrutarla todos juntos</h4>
+                    <h4 class="text-left white">Envíanos tu receta ecológica para disfrutarla todos juntos</h4>
                 </div>
                 <div class="col-12 col-md-6">
                     <img src="img/logo-nav.png" class="img-fluid" id="img-header">
@@ -162,6 +149,12 @@
                         <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellidos">
                     </div>
                 </div>
+                <div class="form-group row">
+                    <label for="recipe" class="col-md-2 col-form-label">Título receta</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="recipe" name="recipe" placeholder="Título">
+                    </div>
+                </div>
 
                 <div class="form-group row">
                     <label for="feedback" class="col-md-2 col-form-label">Ingredientes de la receta</label>
@@ -179,7 +172,7 @@
 
                 <div class="form-group row">
                     <div class="offset-md-2 col-md-10">
-                        <button id="btn-formulary" type="button" class="btn btn-primary">Enviar receta</button>
+                        <button id="btn-formulary-recipe" type="button" class="btn btn-primary">Enviar receta</button>
                     </div>
                 </div>
 

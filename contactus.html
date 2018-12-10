@@ -19,6 +19,10 @@
     <!-- Scripts js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="node_modules/nodemailer/lib/nodemailer.js"></script>
+    <script src="js/js.js"></script>
+    
 </head>
 
 <body>
@@ -109,7 +113,7 @@
 
                 <div class="col-12 col-md-6 ">
                     <h1>Contáctanos</h1>
-                    <h4 class="text-left">Aténdemos a cualquier duda, petición o sugerencia</h4>
+                    <h4 class="text-left white">Aténdemos a cualquier duda, petición o sugerencia</h4>
                 </div>
                 <div class="col-12 col-md-6">
                     <img src="img/logo-nav.png" class="img-fluid" id="img-header">
@@ -138,7 +142,7 @@
                     <i class="fa fa-fax fa-lg"></i>: +852 8765 4321
                     <br>
                     <i class="fa fa-envelope fa-lg"></i>:
-                    <a href="mailto:siampalace@food.net">sollerbio@gmail.com</a>
+                    <a href="mailto:siampalace@food.net" style="color:#007bff">sollerbio@gmail.com</a>
                 </address>
                 <br>
                 <!-- IMPORTANT -->
@@ -153,7 +157,7 @@
             <div id="divmap" class="col-12 col-md-6">
                 <h5>Mapa de nuestra ubicación</h5>
                 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d766.7034247497468!2d2.7137012291843456!3d39.76629109871537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297e8bf3c7e8637%3A0x2f27054db0fc1568!2zQ2FycmVyIGRlIEJhdcOnw6AsIDExLCAwNzEwMCBTw7NsbGVyLCBJbGxlcyBCYWxlYXJz!5e0!3m2!1ses!2ses!4v1544002456345"
-                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    width="400" height="300" frameborder="0" allowfullscreen></iframe>
             </div>
 
 
@@ -217,7 +221,7 @@
                 </div>
                 <div class="form-group row">
                     <div class="offset-md-2 col-md-10">
-                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        <button id="btn-formulary" type="button" class="btn btn-primary">Enviar mensaje</button>
                     </div>
                 </div>
 
