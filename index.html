@@ -103,29 +103,29 @@
     <header>
         <div style="width:100%;">
 
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div class="carousel">
                 <ul class="carousel-indicators d-none d-md-flex">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li id="0" class="icon-item active"></li>
+                    <li id="1" class="icon-item"></li>
+                    <li id="2" class="icon-item"></li>
                 </ul>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div id="c0" class="carousel-item active">
                         <img id="carousel1" src="img/carousel1.png" alt="Sóller Bio" style="width:100%;">
                     </div>
-                    <div class="carousel-item">
+                    <div id="c1" class="carousel-item">
                         <img id="carousel2" src="img/carousel2.png" alt="Productos ecológicos" style="width:100%;">
                     </div>
-                    <div class="carousel-item">
+                    <div id="c2" class="carousel-item">
                         <img id="carousel3" src="img/carousel3.png" alt="Chica saludable" style="width:100%;">
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <div id="prev" class="carousel-control-prev" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
+                </div>
+                <div id="next" class="carousel-control-next" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
-                </a>
+                </div>
             </div>
         </div>
 

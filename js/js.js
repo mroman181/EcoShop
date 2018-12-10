@@ -1,9 +1,43 @@
+var itemActive = 0;
+
+var timer = null;
+
+
 $(document).ready(function () {
+
+    timer = setInterval(function () { nextSlide(); }, 5000);
 
     cambiarSrcCarousel()
 
     $(window).resize(function () {
         cambiarSrcCarousel()
+    });
+
+
+    $("#next").click(function () {
+        nextSlide();
+        clearInterval(timer);
+        timer = setInterval(function () { nextSlide(); }, 5000);
+    });
+
+    $("#prev").click(function () {
+        previousSlide();
+        clearInterval(timer);
+        timer = setInterval(function () { nextSlide(); }, 5000);
+    });
+
+    $(".icon-item").click(function (e) {
+        var itemid = e.target.id;
+        itemActive = itemid;
+
+        $(".carousel-item").removeClass("active");
+        $(".icon-item").removeClass("active");
+
+        $("#"+itemid).addClass("active");
+        $("#c"+itemid).addClass("active");
+
+        clearInterval(timer);
+        timer = setInterval(function () { nextSlide(); }, 5000);        
     });
 
     $("#btn-formulary-recipe").click(function () {
@@ -46,15 +80,15 @@ $(document).ready(function () {
                 // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
             });
         });
-/*
-        swal({
-            type: "success",
-            title: "Receta enviada satisfactoriamente",
-            text: "Gracias por su colaboración"
-        }
-        ).then((value) => {
-            if (value) window.open("index.html", "_self");
-        });*/
+        /*
+                swal({
+                    type: "success",
+                    title: "Receta enviada satisfactoriamente",
+                    text: "Gracias por su colaboración"
+                }
+                ).then((value) => {
+                    if (value) window.open("index.html", "_self");
+                });*/
 
     });
 
@@ -70,9 +104,9 @@ $(document).ready(function () {
 
     });
 
-    $(".navbar-toggler").hover(function(){
+    $(".navbar-toggler").hover(function () {
         $(".icon-bar").css("background-color", "white");
-        }, function(){
+    }, function () {
         $(".icon-bar").css("background-color", "rgb(43, 158, 53)");
     });
 
@@ -90,4 +124,33 @@ function cambiarSrcCarousel() {
         $("#carousel2").attr("src", "./img/carousel2-movil.png");
         $("#carousel3").attr("src", "./img/carousel3-movil.png");
     }
+}
+
+function nextSlide() {
+
+    var carouselItems = $(".carousel-item");
+    var iconItem = $(".icon-item");
+
+    $(carouselItems[itemActive]).toggleClass("active");
+    $(iconItem[itemActive]).toggleClass("active");
+
+    itemActive = (itemActive + 1) % 3;
+
+    $(carouselItems[itemActive]).toggleClass("active");
+    $(iconItem[itemActive]).toggleClass("active");
+}
+
+function previousSlide() {
+
+    var carouselItems = $(".carousel-item");
+    var iconItem = $(".icon-item");
+
+    $(carouselItems[itemActive]).toggleClass("active");
+    $(iconItem[itemActive]).toggleClass("active");
+
+    itemActive = itemActive - 1;
+    if (itemActive < 0) itemActive = 2;
+
+    $(carouselItems[itemActive]).toggleClass("active");
+    $(iconItem[itemActive]).toggleClass("active");
 }
