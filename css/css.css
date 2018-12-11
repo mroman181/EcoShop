@@ -41,8 +41,8 @@ address{    font-size:80%;    margin:0px;}
 #img-header{max-height: 180px; margin-left: auto; margin-right: auto; display: block;}
 #map{max-width: 100%; border: solid;}
 .producto{margin-top:0px;}
-.receta{margin-top: 20px;}
-h1, h2, h3, h4, h5, h6{ font-family: 'PT Sans', sans-serif;}
+.receta{margin-bottom: 70px;}
+h1, h2, h3, h4, h5, h6, p{ font-family: 'PT Sans', sans-serif;}
 #sendyour{border: solid;}
 @media screen and (max-width: 767px){ 
 
